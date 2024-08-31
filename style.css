@@ -2,13 +2,37 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
-    height: 90vh;
+    height: 110vh;
     background-image: url(./Image/gym-526995_1920.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .nav-item:hover {
     border: 1px solid black;
     border-radius: 4px;
 
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width:600px) {
+
+    .container {
+        height: 190vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .first {
+        height: 200vh;
+    }
 }
